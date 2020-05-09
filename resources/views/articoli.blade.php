@@ -13,7 +13,7 @@
       <img src="{{$articolo['avatar']}}" alt="avatar">
       <h3>Autore: {{$articolo['nomeAutore']}}</h3>
       <div class="articolo-info">
-        <h2><a href="{{$key}}">{{$articolo['titolo']}}</a></h2>
+        <h2><a href="{{route('articoli.show', $key)}}">{{$articolo['titolo']}}</a></h2>
         <p>{{$articolo['descrizione']}}</p>
         <small>{{$articolo['data']}}</small>
       </div>
